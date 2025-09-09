@@ -1,0 +1,42 @@
+name: deploy changes to resume webpage frontend
+
+on: 
+  push:
+    branches: [ main ]
+    paths:
+      - '*.html'
+      - '*.css'
+
+env:
+  AWS_REGION: us-east-1
+  BUCKET_NAME: halie-do-resume.com 
+  
+permissions:
+  id-token: write
+  contents: read
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main' # only runs if the workflow was triggered by an event on the main branch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Configure AWS (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4 # Configures AWS credentials on the runner using OIDC
+        with:
+          role-to-assume: arn:aws:iam::039612856168:role/GitHub-OIDC-FrontendDeploy
+          aws-region: ${{ env.AWS_REGION }}
+          role-session-name: gha-${{ github.ref_name }}-${{ github.run_id }}
+      - name: Sync site to S3
+        run: |
+          aws s3 sync . "s3://${{ env.BUCKET_NAME }}/" \
+            --delete \
+            --exclude "README.md" \
+            --exclude "LICENSE"
+
+    
