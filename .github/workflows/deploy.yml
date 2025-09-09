@@ -1,16 +1,16 @@
 name: deploy changes to resume webpage frontend
 
-on: 
+on:
   push:
-    branches: [ main ]
+    branches: [main]
     paths:
       - '*.html'
       - '*.css'
 
 env:
   AWS_REGION: us-east-1
-  BUCKET_NAME: halie-do-resume.com 
-  
+  BUCKET_NAME: halie-do-resume.com
+
 permissions:
   id-token: write
   contents: read
@@ -36,7 +36,7 @@ jobs:
         run: |
           aws s3 sync . "s3://${{ env.BUCKET_NAME }}/" \
             --delete \
+            --exclude ".git/*" \
+            --exclude ".github/*" \
             --exclude "README.md" \
             --exclude "LICENSE"
-
-    
