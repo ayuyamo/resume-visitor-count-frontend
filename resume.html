@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="My resume for cloud">
+        <meta name="author" content="Quynh Anh Do (Halie)">
+        <link rel="stylesheet" href="resume.css">
+        <title>
+            My resume
+        </title>
+    </head>
+    <body>
+        <div class="padded-box calibri-text">
+            <div class="centered-text">Welcome, Visitor#<div id="VisitorCounter">!</div></div>
+            <h1 class="centered-text name">Halie Do</h1>
+            <p class="contact-info centered-text">
+                El Cajon, CA | 619-743-7552 |
+                <a href="mailto:doq300861@gmail.com">doq300861@gmail.com</a> |
+                <a href="https://github.com/ayuyamo?tab=repositories">GitHub</a> |
+                <a href="https://www.linkedin.com/in/halie-do/">LinkedIn</a>
+            </p>
+            <div class="section">
+                <h2 class="italic">EDUCATION</h2>
+                <hr />
+                <div class="justify-between">
+                    <p>San Diego State University</p>
+                    <p>Expected Graduation Date: December 2025</p>
+                </div>
+                <div class="justify-between">
+                    <p>BS Computer Science</p>
+                    <p>GPA: 3.92</p>
+                </div>
+                <p class="coursework"><strong>Relevant coursework: </strong>Java Programming, Statistics, Computer Organization, Intro to Software Systems, Data Structures, Artificial Intelligence, Computer Architecture, Operating Systems, Advanced Programming Languages</p>
+            </div>
+            <div class="section">
+                <h2 class="italic">CERTIFICATIONS</h2>
+                <hr />
+                <div class="justify-between">
+                    <a href="https://www.credly.com/badges/9f631974-973b-43d6-b4af-82a97f3a2b72/public_url">AWS Certified Cloud Practitioner (CCP)</a>
+                    <p class="italic">Aug 2025 – Aug 2028</p>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="italic">TECHNICAL SKILLS</h2>
+                <hr />
+                <div class="container">
+                    <div class="flex-item">
+                        <p><strong>Languages: </strong>Java, Python, C++, C, HTML, JavaScript/TS</p>
+                        <p><strong>Database Systems: </strong>MongoDB, DynamoDB, PostgreSQL, Firebase DB</p>
+                        <p><strong>Frameworks & Libraries: </strong>Qt Creator, ROS2 Foxy, YOLOv8, NodeJS, React, Vice, Firebase, Supabase, AWS</p>
+                    </div>
+                    <div class="flex-item">
+                        <p><strong>Operating Systems: </strong>Ubuntu 20.04, Kali Linux, Windows 10 Pro</p>
+                        <p><strong>Tools & Technologies: </strong>VMware WorkStation Pro, GitHub, TCP/IP communication, Postman, Tailwind CSS, Android Studio, Git</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="italic">EXPERIENCES</h2>
+                <hr />
+                <div class="experiences">
+                    <div>
+                        <div class="justify-between">
+                            <p><strong>SDSU Mechatronics Club, </strong>Software Developer <span class="italic">–  San Diego, CA</span></p>
+                            <p class="italic">July 2023 – Present</p>
+                        </div>
+                        <ul class="exp-description">
+                            <li>Developing a PyQt5-based graphical interface that receives and displays real-time video from a robot’s camera via network socket, with a separate thread for video processing that supports pause, resume, and stop controls using mutexes and wait conditions.</li>
+                            <li>Collaborated closely with the software team during the International RoboSub Competition 2025 (and previously 2023 & 2024) to troubleshoot and fine-tune underwater robot movement.</li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <div class="justify-between">
+                            <p><strong>VillageCore, </strong>Software Developer Intern  <span class="italic">–  San Diego, CA</span></p>
+                            <p class="italic">June 2025 – July 2025</p>
+                        </div>
+                        <ul class="exp-description">
+                            <li>Redesigned the mobile app’s UI from the ground up and migrating legacy content by scraping data from a WordPress site, structuring it into relational Supabase tables with real-time synchronization across linked records.</li>
+                            <li>Integrated Supabase's full-text search API and ElevenLabs to develop a voice/chatbot trained on content from both the website and mobile app for dynamic user assistance.</li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <div class="justify-between">
+                            <p><strong>Redtri.AI, </strong>Software Engineering Intern <span class="italic">– San Diego, CA</span></p>
+                            <p class="italic">March 2025 – April 2025</p>
+                        </div>
+                        <ul class="exp-description">
+                            <li>Built a batch URL classification server using a TensorFlow model, with non-blocking client handling and efficient request processing. The server collects classified URLs into a structured format for downstream use, with the AWS SQS integration left modular for future implementation by teammates.</li>
+                            <li>Implemented structured logging and proper shutdown procedures to ensure all tasks completed safely when terminating the server.</li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <div class="justify-between">
+                            <p><strong>San Diego State University,  </strong>Data Structures Teaching Assistant <span class="italic">– San Diego, CA</span></p>
+                            <p class="italic">September 2024 – December 2024</p>
+                        </div>
+                        <ul class="exp-description">
+                            <li>Assisted students in understanding core concepts of data structures and algorithms, graded assignments, and provided constructive feedback to ensure compliance with coding standards and sound algorithmic principles.</li>
+                            <li>Led review sessions after exams to help students identify and learn from their mistakes, offering constructive feedback and tips for better performance in future assessments.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="italic">PROJECTS</h2>
+                <hr>
+                <div>
+                    <div class="justify-between">
+                        <p><strong>Real-Time Multi-User Collaborative Whiteboard</strong></p>
+                        <p class="italic">March 2025 -  May 2025</p>
+                    </div>
+                    <ul class="proj-description">
+                        <li>Developed a real-time collaborative whiteboard using Next.js with an infinite canvas (zooming, panning) and interactive tools like freehand drawing and erasing, featuring persistent strokes across sessions via Supabase and WebSockets.</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="justify-between">
+                        <p><strong>Real-Time Chat Application</strong></p>
+                        <p class="italic">February 2025 – April 2025</p>
+                    </div>
+                    <ul class="proj-description">
+                        <li>Built and deployed a real-time chat application using Next.js, TypeScript, and Firebase (Auth & Firestore), featuring secure Google sign-in and a dynamic chatroom interface with live message updates and synchronized data storage.</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="justify-between">
+                        <p><strong>LPL Financial Hackathon - Financial Portfolio Analysis Web Application</strong></p>
+                        <p class="italic">January 2025</p>
+                    </div>
+                    <ul class="proj-description">
+                        <li>Built a Next.js web application hosted on EC2 instance that allows users to submit investment portfolios, including stock tickers and allocation percentages, and leverages ChatGPT-powered analysis to evaluate portfolio strength, diversification, and risk in real time.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            fetch('https://qtwej0j70c.execute-api.us-east-1.amazonaws.com/default/updateVisitorCounter')
+                .then(response => response.json())
+                .then(data => {
+                document.getElementById("VisitorCounter").textContent = data["count"];
+            })
+        </script>
+
+    </body>
+</html>

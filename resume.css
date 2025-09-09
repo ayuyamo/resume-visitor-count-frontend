@@ -1,0 +1,87 @@
+hr {
+    margin-top: 0;
+}
+
+h2 {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.padded-box {
+    padding: 40px;
+    height: 1123px;
+    width: 794px;
+    margin: 0 auto;
+    border: 1px solid gray;
+}
+
+.justify-between {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.justify-between p {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.flex-item p {
+  margin: 0 0 2px 0;  /* top right bottom left */
+}
+
+.exp-description {
+    margin-top: 0;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.exp-description li {
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+
+.calibri-text {
+    font-family: Calibri, sans-serif
+}
+
+.contact-info {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.name {
+    padding-bottom: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+}
+
+.coursework {
+    margin-top: 4px;
+    padding-top: 0;
+}
+
+.proj-description {
+    margin-top: 0;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
